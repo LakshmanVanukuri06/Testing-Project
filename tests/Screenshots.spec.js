@@ -9,7 +9,7 @@ await page.screenshot({path:'tests\Screenshot'+Date.now()+'HomePage.png'})
 })
 test('full screenshot', async({page})=>{
     await page.goto('https://demo.opencart.com/')
-    await page.screenshot({path:'tests\Screenshot'+Date.now()+'Fullpage.png',fullPage:true})
+    await page.screenshot({path:'tests\Screenshot'+Date.now()+'FullPage.png',fullPage:true})
     
     
     

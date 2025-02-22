@@ -12,7 +12,7 @@ console.log("before each is executed")
 test.afterEach(async()=>{
 console.log("after each")
 })
-test.describe.skip('Group1',() =>{  ///it only executed if you put only
+test.describes('Group1',() =>{  ///it only executed if you put only
     test('Testing1', async({page})=> {
         console.log('this is testing1')
         })

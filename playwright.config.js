@@ -24,7 +24,7 @@ module.exports = defineConfig({
   reporter: [
     ['html'],
     ['allure-playwright', {
-      outputFolder: 'allure-results', // Raw Allure results (required)
+      outputFolder: 'my-allure-results', // Raw Allure results (required)
       
     }]
   ],

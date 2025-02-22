@@ -7,7 +7,6 @@ page.getByTitle() to locate an element by its title attribute.
 page.getByTestId() to locate an element based on its data-testid attribute (other attributes can be configured).
 */
 
-
 const {test, expect}=require('@playwright/test')
 test('Locators_BuildingMethods', async({page}) =>{
 
@@ -20,6 +19,7 @@ await page.getByPlaceholder('Username').fill('admin')
 await page.getByPlaceholder('Password').fill('admin123')
 //page.getByRole() to locate by explicit and implicit accessibility attributes.
 await page.getByRole('button', {type : 'submit'}).click()
+//page.getByText() to locate by text content.
 await expect(await page.getByText('manda user')).toBeVisible()
 
 
