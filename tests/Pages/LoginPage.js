@@ -11,10 +11,10 @@ this.loginButton= "button[onclick='logIn()']"
  async gotoLoginPage() {
 await this.page.goto('https://demoblaze.com/index.html')
 }
-async login(username, Password){
+async login(username, Pass){
 await this.page.locator(this.loginLink).click()
 await this.page.locator(this.usernameInput).fill(username)
-await this.page.locator(this.passwordInput).fill(Password)
+await this.page.locator(this.passwordInput).fill(Pass)
 await this.page.locator(this.loginButton).click()
 }
     
